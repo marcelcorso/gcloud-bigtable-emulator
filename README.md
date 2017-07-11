@@ -2,6 +2,7 @@
 
 A docker image `FROM google/cloud-sdk:alpine` that `gcloud beta emulators bigtable start` 
 
+[https://hub.docker.com/r/marcelcorso/gcloud-bigtable-emulator/](https://hub.docker.com/r/marcelcorso/gcloud-bigtable-emulator/)
 
 ## Build and run
 
@@ -10,7 +11,7 @@ docker build  -t bigtable-emulator:latest .
 docker run --rm -ti bigtable-emulator:latest -p 8086:8086
 ```
 
-## test with [cbt](https://cloud.google.com/bigtable/docs/go/cbt-reference) on another console
+## Test with [cbt](https://cloud.google.com/bigtable/docs/go/cbt-reference) on another console
 
 ```
 export BIGTABLE_EMULATOR_HOST=localhost:8086
